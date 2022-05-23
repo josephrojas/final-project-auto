@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>APP INBOCA</title>
+  <link href="bootstrap.min.css" rel="stylesheet">
+  <script src="popper.min.js"></script>
+  <script src="bootstrap.min.js"></script>
+  <script src="bootstrap.bundle.min.js"></script>
+  <script src="jquery.min.js"></script>
+</head>
+
+<body cz-shortcut-listen="true">
+
+  <main align="center">
+    <div class="container py-4">
+      <header class="pb-3 mb-4 border-bottom">
+        <a class="d-flex align-items-center text-dark text-decoration-none">
+          <span class="fs-4 fw-bold">INBOCA APP</span>
+        </a>
+      </header>
+
+      <div class="p-5 mb-4 bg-light rounded-3">
+        <div class="container-fluid py-5">
+          <h1 class="display-5 fw-bold">DISPLAY</h1>
+          <div class="col-md-12 fs-4">
+            <div class="container">
+
+              <div class="row">
+                <button id="s1" type="button" class="col fw-bold p-5 mb-4 rounded-3  btn btn-outline-success">
+                  <p class="">Sensor 1</p>
+                  <p>
+                  <p class="tem-dis-mod"></p>
+                  <p class="hum-dis-mod"></p>
+                  </p>
+                  <p id="alert1">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                      class="bi bi-exclamation-triangle-fill" viewBox="0 0 16 16">
+                      <path
+                        d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                    </svg>
+                  </p>
+                  <span class="glyphicon glyphicon-alert"></span>
+                </button>
+                <button id="s2" type="button" class="col fw-bold p-5 mb-4  rounded-3  btn btn-outline-success">
+                  <p class="">Sensor 2</p>
+                  <p>
+                  <p class="tem-dis-mod"></p>
+                  <p class="hum-dis-mod"></p>
+                  </p>
+                  <p id="alert2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                      class="bi bi-exclamation-triangle-fill" viewBox="0 0 16 16">
+                      <path
+                        d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                    </svg>
+                  </p>
+                </button>
+                <button id="s3" type="button" class="col fw-bold p-5 mb-4  rounded-3  btn btn-outline-success">
+                  <p class="">Sensor 3</p>
+                  <p>
+                  <p class="tem-dis-mod"></p>
+                  <p class="hum-dis-mod"></p>
+                  </p>
+                  <p id="alert3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                      class="bi bi-exclamation-triangle-fill" viewBox="0 0 16 16">
+                      <path
+                        d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                    </svg>
+                  </p>
+                </button>
+              </div>
+              <div class="row">
+                <button id="s4" type="button" class="col fw-bold p-5 mb-4  rounded-3  btn btn-outline-success">
+                  <p class="">Sensor 4</p>
+                  <p>
+                  <p class="tem-dis-mod"></p>
+                  <p class="hum-dis-mod"></p>
+                  </p>
+                  <p id="alert4">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                      class="bi bi-exclamation-triangle-fill" viewBox="0 0 16 16">
+                      <path
+                        d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                    </svg>
+                  </p>
+                </button>
+                <button id="s5" type="button" class="col fw-bold p-5 mb-4  rounded-3  btn btn-outline-success">
+                  <p class="">Sensor 5</p>
+                  <p>
+                  <p class="tem-dis-mod"></p>
+                  <p class="hum-dis-mod"></p>
+                  </p>
+                  <p id="alert5">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                      class="bi bi-exclamation-triangle-fill" viewBox="0 0 16 16">
+                      <path
+                        d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                    </svg>
+                  </p>
+                </button>
+                <button id="s6" type="button" class="col fw-bold p-5 mb-4  rounded-3  btn btn-outline-success">
+                  <p class="">Sensor 6</p>
+                  <p>
+                  <p class="tem-dis-mod"></p>
+                  <p class="hum-dis-mod"></p>
+                  </p>
+                  <p id="alert6">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                      class="bi bi-exclamation-triangle-fill" viewBox="0 0 16 16">
+                      <path
+                        d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                    </svg>
+                  </p>
+                </button>
+              </div>
+              <div class="row">
+                <button id="s7" type="button" class="col fw-bold p-5 mb-4  rounded-3  btn btn-outline-success">
+                  <p class="">Sensor 7</p>
+                  <p>
+                  <p class="tem-dis-mod"></p>
+                  <p class="hum-dis-mod"></p>
+                  </p>
+                  <p id="alert7">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                      class="bi bi-exclamation-triangle-fill" viewBox="0 0 16 16">
+                      <path
+                        d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                    </svg>
+                  </p>
+                </button>
+                <button id="s8" type="button" class="col fw-bold p-5 mb-4  rounded-3  btn btn-outline-success">
+                  <p class="">Sensor 8</p>
+                  <p>
+                  <p class="tem-dis-mod"></p>
+                  <p class="hum-dis-mod"></p>
+                  </p>
+                  <p id="alert8">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                      class="bi bi-exclamation-triangle-fill" viewBox="0 0 16 16">
+                      <path
+                        d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                    </svg>
+                  </p>
+                </button>
+                <button id="s9" type="button" class="col fw-bold p-5 mb-4  rounded-3  btn btn-outline-success">
+                  <p class="">Sensor 9</p>
+                  <p>
+                  <p class="tem-dis-mod"></p>
+                  <p class="hum-dis-mod"></p>
+                  </p>
+                  <p id="alert9">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                      class="bi bi-exclamation-triangle-fill" viewBox="0 0 16 16">
+                      <path
+                        d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                    </svg>
+                  </p>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row align-items-md-stretch">
+
+        <div class="col-md-6">
+          <div class="h-100 p-5 text-white bg-dark rounded-3 sensor-modulo">
+            <h2 id="info-modulo-nombre"></h2>
+            <div class="alert alert-warning">
+              <p class="tem-dis-mod">
+            </div>
+            <div class="alert alert-primary">
+              <p class="hum-dis-mod">
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="h-100 p-5  border rounded-3">
+            <h2>Aire Acondicionado</h2>
+
+            <div id="ac-on" class="rounded-3  btn btn-outline-info">
+              <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor" class="bi bi-fan"
+                viewBox="0 0 16 16">
+                <path
+                  d="M10 3c0 1.313-.304 2.508-.8 3.4a1.991 1.991 0 0 0-1.484-.38c-.28-.982-.91-2.04-1.838-2.969a8.368 8.368 0 0 0-.491-.454A5.976 5.976 0 0 1 8 2c.691 0 1.355.117 1.973.332.018.219.027.442.027.668Zm0 5c0 .073-.004.146-.012.217 1.018-.019 2.2-.353 3.331-1.006a8.39 8.39 0 0 0 .57-.361 6.004 6.004 0 0 0-2.53-3.823 9.02 9.02 0 0 1-.145.64c-.34 1.269-.944 2.346-1.656 3.079.277.343.442.78.442 1.254Zm-.137.728a2.007 2.007 0 0 1-1.07 1.109c.525.87 1.405 1.725 2.535 2.377.2.116.402.222.605.317a5.986 5.986 0 0 0 2.053-4.111c-.208.073-.421.14-.641.199-1.264.339-2.493.356-3.482.11ZM8 10c-.45 0-.866-.149-1.2-.4-.494.89-.796 2.082-.796 3.391 0 .23.01.457.027.678A5.99 5.99 0 0 0 8 14c.94 0 1.83-.216 2.623-.602a8.359 8.359 0 0 1-.497-.458c-.925-.926-1.555-1.981-1.836-2.96-.094.013-.191.02-.29.02ZM6 8c0-.08.005-.16.014-.239-1.02.017-2.205.351-3.34 1.007a8.366 8.366 0 0 0-.568.359 6.003 6.003 0 0 0 2.525 3.839 8.37 8.37 0 0 1 .148-.653c.34-1.267.94-2.342 1.65-3.075A1.988 1.988 0 0 1 6 8Zm-3.347-.632c1.267-.34 2.498-.355 3.488-.107.196-.494.583-.89 1.07-1.1-.524-.874-1.406-1.733-2.541-2.388a8.363 8.363 0 0 0-.594-.312 5.987 5.987 0 0 0-2.06 4.106c.206-.074.418-.14.637-.199ZM8 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z" />
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14Zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16Z" />
+              </svg>
+              <p>ON</p>
+            </div>
+            <div id="ac-off" class="rounded-3  btn btn-outline-secondary">
+              <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor" class="bi bi-fan"
+                viewBox="0 0 16 16">
+                <path
+                  d="M10 3c0 1.313-.304 2.508-.8 3.4a1.991 1.991 0 0 0-1.484-.38c-.28-.982-.91-2.04-1.838-2.969a8.368 8.368 0 0 0-.491-.454A5.976 5.976 0 0 1 8 2c.691 0 1.355.117 1.973.332.018.219.027.442.027.668Zm0 5c0 .073-.004.146-.012.217 1.018-.019 2.2-.353 3.331-1.006a8.39 8.39 0 0 0 .57-.361 6.004 6.004 0 0 0-2.53-3.823 9.02 9.02 0 0 1-.145.64c-.34 1.269-.944 2.346-1.656 3.079.277.343.442.78.442 1.254Zm-.137.728a2.007 2.007 0 0 1-1.07 1.109c.525.87 1.405 1.725 2.535 2.377.2.116.402.222.605.317a5.986 5.986 0 0 0 2.053-4.111c-.208.073-.421.14-.641.199-1.264.339-2.493.356-3.482.11ZM8 10c-.45 0-.866-.149-1.2-.4-.494.89-.796 2.082-.796 3.391 0 .23.01.457.027.678A5.99 5.99 0 0 0 8 14c.94 0 1.83-.216 2.623-.602a8.359 8.359 0 0 1-.497-.458c-.925-.926-1.555-1.981-1.836-2.96-.094.013-.191.02-.29.02ZM6 8c0-.08.005-.16.014-.239-1.02.017-2.205.351-3.34 1.007a8.366 8.366 0 0 0-.568.359 6.003 6.003 0 0 0 2.525 3.839 8.37 8.37 0 0 1 .148-.653c.34-1.267.94-2.342 1.65-3.075A1.988 1.988 0 0 1 6 8Zm-3.347-.632c1.267-.34 2.498-.355 3.488-.107.196-.494.583-.89 1.07-1.1-.524-.874-1.406-1.733-2.541-2.388a8.363 8.363 0 0 0-.594-.312 5.987 5.987 0 0 0-2.06 4.106c.206-.074.418-.14.637-.199ZM8 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z" />
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14Zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16Z" />
+              </svg>
+              <p>OFF</p>
+            </div>
+            <h2>Deshumificador</h2>
+          </div>
+        </div>
+      </div>
+
+      <footer class="pt-3 mt-4 text-muted border-top">
+        © Santiago Botero, Joseph Rojas y Juan David Valencia
+      </footer>
+    </div>
+  </main>
+</body>
+<script>
+  $(document).ready(function () {
+    for (let i = 1; i < 10; i++) {
+      $('#alert' + i).hide();
+    }
+
+    $('.sensor-modulo').hide();
+    $('#ac-on').hide();
+    $('#ac-off').hide();
+
+    var cons_tem = 21;
+    var cons_hum = 65;
+
+    var tem = 20;
+    var hum = 15;
+
+    var tem_dummy = 17;
+    var hum_dummy = 10;
+
+    function validator(tem, hum, sensor) {
+      if ((tem > cons_tem) || (hum > cons_hum)) {
+        $('#alert' + sensor).hide();
+        $("#s" + sensor).removeClass("btn-outline-success").addClass("btn-outline-danger");
+        $('#alert' + sensor).show();
+      } else {
+        $('#alert' + sensor).hide();
+        $("#s" + sensor).removeClass("btn-outline-danger").addClass("btn-outline-success");
+      }
+    }
+
+    function clickModule(module, tem, hum) {
+      $('.sensor-modulo .tem-dis-mod').html();
+      $('.sensor-modulo .hum-dis-mod').html();
+      $('#info-modulo-nombre').html();
+      $('.sensor-modulo').show();
+      $('#info-modulo-nombre').html("Sensor: " + module);
+      $('.sensor-modulo .tem-dis-mod').html(tem + " Celsius");
+      $('.sensor-modulo .hum-dis-mod').html(hum + " %");
+    }
+
+    setInterval(function () {
+
+      //tem = A; 
+      //hum = B; 
+      $.ajax({
+        url: "/sensor",
+        type: 'GET',
+        dataType: 'json', // added data type
+        success: function (res) {
+          console.log(res);
+          tem = res.temperature;
+          hum = res.humidity;
+        }, error: function (params) {
+          console.log(params);
+        }
+      });
+
+      for (let i = 1; i < 10; i++) {
+        $('#s' + i + ' .tem-dis-mod').html();
+        $('#s' + i + ' .tem-dis-mod').html(tem_dummy + " Celsius");
+        $('#s' + i + ' .hum-dis-mod').html();
+        $('#s' + i + ' .hum-dis-mod').html(hum_dummy + " %");
+        $('#s' + i).attr('tem', tem_dummy);
+        $('#s' + i).attr('hum', hum_dummy);
+      }
+
+      $('#s5 .tem-dis-mod').html();
+      $('#s5 .hum-dis-mod').html();
+      $('#s5 .tem-dis-mod').html(tem + " Celsius");
+      $('#s5 .hum-dis-mod').html(hum + " %");
+
+      $('#s5').attr('tem', tem);
+      $('#s5').attr('hum', hum);
+
+      if (tem > cons_tem || hum > cons_hum) {
+        console.log('A/C ON');
+        $('#ac-off').hide();
+        $('#ac-on').show();
+        $.ajax({
+          url: "http://192.168.1.3/fan=on",
+          type: 'GET',
+          dataType: 'json', // added data type
+          success: function (res) {
+          }, error: function (params) {
+            console.log(params);
+          }
+        });
+      } else {
+        console.log('A/C OFF');
+        $('#ac-off').show();
+        $('#ac-on').hide();
+        $.ajax({
+          url: "http://192.168.1.3/fan=off",
+          type: 'GET',
+          dataType: 'json', // added data type
+          success: function (res) {
+          }, error: function (params) {
+            console.log(params);
+          }
+        });
+      }
+
+      for (let j = 1; j < 10; j++) {
+        if (j == 5) {
+          validator(tem, hum, j);
+        } else {
+          validator(tem_dummy, hum_dummy, j);
+        }
+
+      }
+    }, 5000);
+
+    $("button").click(function () {
+      clickModule(this.id, $('#' + this.id).attr('tem'), $('#' + this.id).attr('hum'));
+    });
+
+  });
+
+</script>
+
+</html>
